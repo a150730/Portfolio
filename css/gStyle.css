@@ -55,7 +55,8 @@ body {
         color: #FFF;
         position: relative;
         overflow: hidden;
-        transition: ease-in-out .3s;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0, 0.98, -0.02);
     }
     .logo img:hover {
         transition-delay: .1s;
@@ -346,7 +347,9 @@ just some halal gap between wide screen and small screen
         height: auto;
         width: 100%;
         /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-        transition: ease-out 100ms;
+        /* transition: ease-out 100ms; */
+        transition-duration: 150ms;
+        transition-timing-function: cubic-bezier(0, 0.98, -0.02);
     }
     .gImg .img-container img:hover {
         height: auto;
@@ -395,7 +398,9 @@ just some halal gap between wide screen and small screen
     white-space: nowrap;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all 150ms ease-in-out;
+    /* transition:  150ms ease-in-out; */
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0, 0.98, -0.02);
 }
 
 .ta {

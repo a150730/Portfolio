@@ -78,7 +78,7 @@ body {
     .content {
         /* margin: 50px 50px;
         padding: 50px 50px; */
-        display: block;
+        display: felx;
         background-color: hsl(329, 83%, 53%, 0.001);
         transition: ease-out 300ms;
         /* height: 85vh; */
@@ -144,6 +144,37 @@ body {
         list-style: none;
         display: inline-block;
         margin: 20px;
+    }
+    .social-icons li a {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, .3);
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, .3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #FFF;
+        position: relative;
+        overflow: hidden;
+        transition: .4s;
+    }
+    .social-icons li a::after {
+        content: "";
+        position: absolute;
+        left: 90px;
+        width: 100%;
+        height: 100%;
+        background: #FFF;
+        transform: skewX(45deg);
+        pointer-events: none;
+        transition: .4s;
+    }
+    .social-icons li a:hover::after {
+        left: -90px;
     }
     /******************************  content - about ********************************/
     .about-container {
@@ -333,7 +364,7 @@ just some halal gap between wide screen and small screen
         text-align: center;
     }
     .wlcm-msg h1 {
-        font-size: 10vw;
+        font-size: 72px;
         color: #E4C7B7;
         letter-spacing: 2px;
         display: flex;
@@ -341,7 +372,7 @@ just some halal gap between wide screen and small screen
         align-items: center;
     }
     .wlcm-msg h2 {
-        font-size: 6vw;
+        font-size: 24px;
         color: #E4C7B7;
         letter-spacing: 2px;
         display: flex;
@@ -362,6 +393,38 @@ just some halal gap between wide screen and small screen
         list-style: none;
         display: inline-block;
         margin: 10px;
+    }
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Social Icon   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    .social-icons li a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, .3);
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, .3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #FFF;
+        position: relative;
+        overflow: hidden;
+        transition: .4s;
+    }
+    .social-icons li a::after {
+        content: "";
+        position: absolute;
+        left: 80px;
+        width: 100%;
+        height: 100%;
+        background: #FFF;
+        transform: skewX(45deg);
+        pointer-events: none;
+        transition: .4s;
+    }
+    .social-icons li a:hover::after {
+        left: -80px;
     }
     /* ======================================   content - about ====================================== */
     .about-container {
@@ -456,6 +519,13 @@ just some halal gap between wide screen and small screen
         border-radius: 50%;
         box-shadow: 2px 5px 5px 6px hsla(163, 82%, 4%, 0.376)
     }
+    /* ======================================   Footer   ====================================== */
+    .footer {
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -473,7 +543,7 @@ end of screen size control
     right: 0;
     bottom: 0;
     height: calc(100vh - 90px);
-    width: 300px;
+    width: 0px;
     padding: 0px 0px;
     z-index: 1000;
     background-color: transparent;
@@ -494,7 +564,6 @@ end of screen size control
     list-style: none;
 }
 
-.nav-sidebar span,
 .nav-sidebar a {
     text-align: right;
     display: block;
@@ -528,40 +597,6 @@ end of screen size control
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    Social Icon   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-.social-icons li a {
-    display: block;
-    width: 60px;
-    height: 60px;
-    background: rgba(255, 255, 255, .3);
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, .3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #FFF;
-    position: relative;
-    overflow: hidden;
-    transition: .4s;
-}
-
-.social-icons li a::after {
-    content: "";
-    position: absolute;
-    left: 90px;
-    width: 100%;
-    height: 100%;
-    background: #FFF;
-    transform: skewX(45deg);
-    pointer-events: none;
-    transition: .4s;
-}
-
-.social-icons li a:hover::after {
-    left: -90px;
-}
 
 .social-icons li a:hover {
     background: #FFF;

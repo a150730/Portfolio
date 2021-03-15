@@ -80,8 +80,7 @@ function skrolEffect() {
 
         }
         if (scrolled > 1709) {
-            getSidebarUl.style.visibility = "visible";
-            getSidebar.style.width = "275px";
+            getSidebarUl.style.visibility = "hidden";
             getSidebarImg.style.visibility = "visible";
 
 
